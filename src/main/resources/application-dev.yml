@@ -1,0 +1,39 @@
+spring:
+  #配置MySQL数据库和连接池
+  datasource:
+    url: jdbc:mysql://192.168.28.130:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    druid:
+      initial-size: 5 #连接池初始化大小
+      min-idle: 10 #最小空闲连接数
+      max-active: 20 #最大连接数
+      web-stat-filter:
+        profile-enable: true
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*" #不统计这些请求数据
+      stat-view-servlet: #访问监控网页的登录用户名和密码
+        login-username: druid
+        login-password: druid
+        url-pattern: /druid/*
+      filter:
+        slf4j:
+          enabled: true
+        stat:
+          merge-sql: true
+          log-slow-sql: true
+          slow-sql-millis: 1000
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      cluster-nodes: 192.168.28.130:9200
+      cluster-name: elasticsearch
+#  elasticsearch:
+#    rest:
+#      uris: ["http://127.0.0.1:9200"]
+
+#关闭：Elasticsearch health check failed。不要用...
+#management:
+#  health:
+#    elasticsearch:
+#      enabled: false
