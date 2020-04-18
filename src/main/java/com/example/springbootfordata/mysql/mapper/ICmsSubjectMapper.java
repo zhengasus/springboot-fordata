@@ -1,6 +1,6 @@
-package com.example.springbootfordata.mapper;
+package com.example.springbootfordata.mysql.mapper;
 
-import com.example.springbootfordata.domain.CmsSubject;
+import com.example.springbootfordata.mysql.domain.CmsSubject;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

@@ -1,7 +1,6 @@
-package com.example.springbootfordata.service;
+package com.example.springbootfordata.mysql.service;
 
-import com.example.springbootfordata.domain.CmsSubject;
-import org.springframework.stereotype.Service;
+import com.example.springbootfordata.mysql.domain.CmsSubject;
 
 import java.util.List;
 

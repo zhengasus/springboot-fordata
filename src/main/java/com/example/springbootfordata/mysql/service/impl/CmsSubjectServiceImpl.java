@@ -1,8 +1,8 @@
-package com.example.springbootfordata.service.impl;
+package com.example.springbootfordata.mysql.service.impl;
 
-import com.example.springbootfordata.domain.CmsSubject;
-import com.example.springbootfordata.mapper.ICmsSubjectMapper;
-import com.example.springbootfordata.service.ICmsSubjectService;
+import com.example.springbootfordata.mysql.domain.CmsSubject;
+import com.example.springbootfordata.mysql.mapper.ICmsSubjectMapper;
+import com.example.springbootfordata.mysql.service.ICmsSubjectService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

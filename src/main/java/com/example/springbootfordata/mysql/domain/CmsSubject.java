@@ -1,4 +1,4 @@
-package com.example.springbootfordata.domain;
+package com.example.springbootfordata.mysql.domain;
 
 import lombok.Data;
 
